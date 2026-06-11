@@ -13,19 +13,19 @@ uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 
 [YouTube-Morphe]
-enabled = true
-app-name = "YouTube"
+app-name = "YouTube Soft Gray"
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
 rv-brand = "Morphe"
 build-mode = "both"
+arch = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 excluded-patches = """\
   'Custom branding' \
-  'Theme' \
   """
+patcher-args = "-O darkThemeBackgroundColor=#1f1f1f"
 
 [Music]
 build-mode = "both"
@@ -35,8 +35,7 @@ uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
 [Music-Morphe]
-enabled = true
-app-name = "Music"
+app-name = "Music Soft Gray"
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
 rv-brand = "Morphe"
@@ -47,8 +46,8 @@ uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 excluded-patches = """\
   'Custom branding' \
-  'Theme' \
   """
+patcher-args = "-O darkThemeBackgroundColor=#1f1f1f"
 
 [Reddit-Morphe]
 app-name = "Reddit"
